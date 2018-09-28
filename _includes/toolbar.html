@@ -1,0 +1,38 @@
+<div class="header">
+  <header class="mdc-toolbar {% if site.data.toolbar.fixed == true %} mdc-toolbar--fixed{% endif %}">
+    <div class="mdc-toolbar__row">
+      <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3 mdc-layout-grid__cell--align-middle mdc-layout-grid--align-left">
+            <div class="mdc-toolbar__section mdc-toolbar__section--shrink-to-fit mdc-toolbar__section--align-start">
+              {% if site.data.drawer %}<button href="#" class="menu-button material-icons mdc-toolbar__menu-icon">menu</button>{% endif %}
+              <span class="mdc-toolbar__title"><a class="logo" href="{{ site.baseurl }}/index.html"><img src="{{ '/assets/img/logo-youse.svg' | relative_url }}" alt="{{ site.title }}" /></a></span>
+            </div>
+          </div>
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 mdc-layout-grid__cell--align-middle mdc-layout-grid--align-right">
+            <div class="mdc-toolbar__section mdc-toolbar__section--align-end">
+              <div>
+                <nav id="toolbar-tab-bar" class="mdc-tab-bar">
+                  {% for toolbar in site.data.toolbar.subpages %}
+                  {% if toolbar.url %}
+                  <a class="mdc-tab{% if page.url == toolbar.url %} mdc-tab--active{% endif %}"
+                  href="{% if toolbar.ext == true %}{{ toolbar.url }}{% else %}{{ toolbar.url | relative_url }}{% endif %}">{{ toolbar.title }}</a>
+                  {% if page.url == toolbar.url and site.data.toolbar.indicator == true %}
+                  <span class="mdc-tab-bar__indicator"></span>
+                  {% endif %}
+                  {% else %}
+                  <p class="mdc-tab">{{ toolbar.title }}</p>
+                  {% endif %}
+                  {% endfor %}
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1 mdc-layout-grid__cell--align-middle mdc-layout-grid--align-right">
+            <i class="material-icons" aria-hidden="true">search</i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>

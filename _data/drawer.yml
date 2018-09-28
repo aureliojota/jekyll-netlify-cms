@@ -1,0 +1,18 @@
+title: jekyll-mdc-drawer
+type: temporary
+# Experimental ^
+subpages:
+  - title: Main Page
+    url: /index.html
+    icon: home
+  - title: About
+    url: /about.html
+    icon: account_circle
+  - title: Posts
+    url: /posts.html
+    ext: true
+  - title: Text (Clickable)
+    icon: text_fields
+    break: true
+  - title: A break!
+  - text: Add text which supports [markdown](https://material.io/components/web/)!

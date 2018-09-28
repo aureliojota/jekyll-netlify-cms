@@ -1,0 +1,11 @@
+title: jekyll-mdc-toolbar
+fixed: true
+indicator: true
+# Currently only supports fixed: true
+subpages:
+  - title: Seguros
+    url: /posts.html
+  - title: Programas de Recompensa
+    ext: true
+  - title: Sinistro
+    ext: true

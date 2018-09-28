@@ -1,0 +1,140 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--mdc-theme-primary);
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+}
+
+pre {
+  padding: 8px 15px;
+  background: #f8f8f8;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  overflow-x: auto;
+}
+
+#main-card,
+#right-card {
+  width: 100%;
+}
+
+.drawer-text {
+  padding: 0 16px;
+  margin: 0;
+  font-size: .8rem;
+  letter-spacing: .04em;
+}
+
+.drawer-text * {
+  margin: 0;
+}
+
+.pitem {
+  margin: 0;
+}
+
+.mdl-layout__content {
+  width: 100%;
+}
+
+#toolbar-tab-bar {
+  padding-right: 12px;
+}
+
+[dir="rtl"] #toolbar-tab-bar {
+  padding-left: 12px;
+}
+
+
+
+
+
+
+
+
+/* Init customize */
+.main-class {
+  max-width: 1000px;
+  padding-top: 12px;
+}
+
+.mdc-toolbar__title .logo {
+  text-decoration: none;
+  color: #fff;
+}
+
+.mdc-toolbar .mdc-layout-grid {
+  padding: 0;
+}
+
+#home {
+  text-align: center;
+}
+
+#home .hero {
+  padding: 80px 0;
+  color: var(--mdc-theme-text-primary-on-primary);
+  background-color: var(--mdc-theme-primary);
+}
+
+#home .hero__title {
+  text-align: left;
+}
+
+#home .hero__card {
+  margin: 80px 0;
+  color: var(--mdc-theme-text-primary-on-background);
+  background-color: var(--mdc-theme-background);
+}
+
+#home .hero__card .mdc-layout-grid {
+  margin: 0;
+}
+
+#home .hero__card .mdc-layout-grid .mdc-typography--headline4 {
+  margin: 0;
+  text-align: center;
+}
+
+#home .hero__card .mdc-button {
+  width: 100%;
+}
+
+#home .home-section {
+  padding: 80px 0;
+}
+
+#home .home-section--white .mdc-typography--headline1,
+#home .home-section--gray .mdc-typography--headline1 {
+  color: var(--mdc-theme-primary);
+}
+
+#home .home-section--purple {
+  color: var(--mdc-theme-text-primary-on-primary);
+  background-color: var(--mdc-theme-primary);
+}
+
+#home .home-section--purple .mdc-card {
+  background-color: rgba(255,255,255,.15);
+}
+
+#home .home-section--white {
+  background-color: var(--mdc-theme-background);
+}
+
+#home .home-section--gray {
+  background-color: #FAFAFA;
+}
