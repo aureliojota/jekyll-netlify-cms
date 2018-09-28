@@ -80,6 +80,17 @@ pre {
   padding: 0;
 }
 
+.mdc-card {
+  overflow: visible;
+}
+
+.mdc-card__img {
+  margin: auto;;
+  margin-top: -80px;
+  width: 80%;
+  height: auto;
+}
+
 #home {
   text-align: center;
 }
@@ -96,8 +107,6 @@ pre {
 
 #home .hero__card {
   margin: 80px 0;
-  color: var(--mdc-theme-text-primary-on-background);
-  background-color: var(--mdc-theme-background);
 }
 
 #home .hero__card .mdc-layout-grid {
@@ -127,14 +136,14 @@ pre {
   background-color: var(--mdc-theme-primary);
 }
 
-#home .home-section--purple .mdc-card {
-  background-color: rgba(255,255,255,.15);
-}
-
 #home .home-section--white {
   background-color: var(--mdc-theme-background);
 }
 
 #home .home-section--gray {
   background-color: #FAFAFA;
+}
+
+#home .mdc-list {
+  text-align: left;
 }

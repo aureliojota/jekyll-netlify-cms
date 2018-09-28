@@ -59,11 +59,40 @@
   font-weight: bold;
 }
 
+.mdc-typography--subtitle2 {
+  font-weight: 500;
+}
+
 .mdc-button--raised:not(:disabled), .mdc-button--unelevated:not(:disabled) {
   background-color: #fb8c15;
   border-radius: 100px;
 }
 
 .mdc-card {
+  padding: 16px;
+  color: var(--mdc-theme-text-primary-on-background);
+  background-color: var(--mdc-theme-background);
   border-radius: 8px;
+  box-shadow: 0 2px 7px 0px rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0,0,0,.12);
+}
+
+.mdc-card--on-primary {
+  color: var(--mdc-theme-text-primary-on-primary);
+  background-color: rgba(255,255,255,.15);
+}
+
+.mdc-list-item__graphic {
+  margin-left: 0;
+  margin-right: 32px;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
