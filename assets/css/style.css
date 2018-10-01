@@ -1,3 +1,7 @@
+* {
+  outline: none;
+}
+
 html {
   height: 100%;
 }
@@ -67,13 +71,18 @@ pre {
 
 /* Init customize */
 .main-class {
+  width: 100%;
   max-width: 1000px;
-  padding-top: 12px;
 }
 
 .mdc-toolbar__title .logo {
   text-decoration: none;
   color: #fff;
+}
+
+.mdc-toolbar__title .logo img {
+  height: 24px;
+  margin-bottom: -8px;
 }
 
 .mdc-toolbar .mdc-layout-grid {
@@ -85,8 +94,7 @@ pre {
 }
 
 .mdc-card__img {
-  margin: auto;;
-  margin-top: -80px;
+  margin: -80px auto 0;
   width: 80%;
   height: auto;
 }
@@ -99,6 +107,8 @@ pre {
   padding: 80px 0;
   color: var(--mdc-theme-text-primary-on-primary);
   background-color: var(--mdc-theme-primary);
+  background: transparent url(../img/hero-home-bg.svg) bottom center no-repeat;
+  background-size: cover;
 }
 
 #home .hero__title {
@@ -111,6 +121,14 @@ pre {
 
 #home .hero__card .mdc-layout-grid {
   margin: 0;
+  padding: 0;
+}
+
+#home .hero__card .mdc-layout-grid__cell {
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #home .hero__card .mdc-layout-grid .mdc-typography--headline4 {
@@ -144,6 +162,83 @@ pre {
   background-color: #FAFAFA;
 }
 
+#home .home-section__header {
+  margin: 0 0 40px;
+}
+
+#home .home-section__header:last-child {
+  margin: 80px 0 40px;
+}
+
+#home .home-section__header .mdc-typography--headline1 {
+  margin: 0 0 40px;
+}
+
+#home .home-section__header .mdc-typography--headline5 {
+  margin: 0;
+}
+
+#home .home-section__header .mdc-typography--subtitle1 {
+  margin: 0 0 8px;
+}
+
 #home .mdc-list {
   text-align: left;
+}
+
+#home-section-3 .mdc-card {
+  height: 180px;
+  text-align: left;
+}
+
+#home-section-4 .mdc-card {
+  height: 148px;
+  text-align: center;
+}
+
+#home-section-4 .mdc-card .mdc-typography--headline3,
+#home-section-4 .mdc-typography--headline5 {
+  margin: 0;
+}
+
+#home-section-4 img {
+  margin-top: 80px;
+}
+
+#home-section-5 .mdc-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  height: 340px;
+}
+
+#home-section-5 .mdc-card__action-icons {
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  width: 100%;
+}
+
+#home-section-5 .home-section__header:last-child {
+  margin: 80px 0 120px;
+}
+
+#home #home-section-6 {
+  padding-bottom: 0;
+  text-align: left;
+}
+
+#home-section-6 .mdc-layout-grid {
+  padding: 0;
+}
+
+#home-section-6 img {
+  display: block;
+  margin: auto;
+}
+
+#home-section-6 .mdc-typography--headline4 {
+  margin-bottom: 0;
 }
