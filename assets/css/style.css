@@ -162,7 +162,7 @@ pre {
   background-color: #FAFAFA;
 }
 
-#home .home-section__header {
+#home .home-section__header:first-child {
   margin: 0 0 40px;
 }
 
@@ -241,4 +241,14 @@ pre {
 
 #home-section-6 .mdc-typography--headline4 {
   margin-bottom: 0;
+}
+
+.footer {
+  padding: 80px 0;
+  color: var(--mdc-theme-text-primary-on-primary);
+  background-color: var(--mdc-theme-primary);
+}
+
+.footer .mdc-button {
+  color: var(--mdc-theme-text-primary-on-primary);
 }

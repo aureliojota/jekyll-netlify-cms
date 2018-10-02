@@ -105,3 +105,15 @@
   -ms-flex-pack: center;
   justify-content: center;
 }
+
+.mdc-divider,
+.mdc-divider--dark {
+  display: block;
+  margin: 16px 0;
+  width: 100%;
+  border-top: 1px solid var(--mdc-theme-text-icon-on-dark);
+}
+
+.mdc-divider--light {
+  border-color: var(--mdc-theme-text-icon-on-light);
+}
